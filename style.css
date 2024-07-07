@@ -567,7 +567,10 @@ form .submit:hover {
     align-items: center;
     gap: 0.5rem;
 }
-
+.Contact .social i{
+    font-size: 35px;
+    margin:10px;
+}
 .Contact h1 {
     font-family: "Baskerville SC", serif;
 }
@@ -579,10 +582,12 @@ h3
     text-align: center;
 }
 .Contact p{
+    margin: 10px;
+    font-size: large;
     text-align: center;
 }
 .Contact .copyright {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .active {
