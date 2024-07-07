@@ -1,0 +1,636 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --primary-color: #061227;
+    --secondary-color: #efef09;
+    --next-color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #061227;
+}
+img{
+    max-width: 100%;
+    height:auto;
+}
+.logo-link {
+    font-size: 40px;
+    padding: 0px;
+    color: var(--next-color);
+    font-family: "Baskervville SC", serif;
+}
+.logo-link:hover{
+    border-top:2px solid #061227;
+    color: var(--secondary-color);
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 75px;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1000;
+}
+
+.navbar .active {
+    background-color: var(--primary-color);
+    box-shadow: 1px 1px 2px white;
+}
+.navbar .content {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.6rem 1rem;
+    font-family: "Baskervville SC", serif;
+}
+
+.navbar .nav-items {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.navbar .nav-items .link a {
+    color: white;
+    font-size: larger;
+    border-top: 2px solid transparent; 
+    transition: all 0.6s;
+}
+
+.navbar .nav-items .link a:hover {
+    color:var(--secondary-color);
+    border-top: 2px solid var(--next-color);
+}
+
+.home {
+    background: linear-gradient(to top, #161d21, #13223cbb), url("Images/family.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    color: white;
+}
+.home .content {
+    font-family: "Bodoni Moda SC", serif;
+    color:var(--secondary-color);
+    font-size: xx-large;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 75%;
+}
+
+.btn-explore {
+    margin-top: 20px;
+    height: 35px;
+    font-size: 15px;
+    width: fit-content;
+    border: none;
+    border-radius: 5px;
+    color: #efef09;
+    background-color: rgb(35, 35, 129);
+    font-family: "Bodoni Moda SC", serif;
+    padding-left: 2px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all 2s;
+}
+
+.btn-explore:hover {
+    border: 2px solid rgb(18, 84, 129);
+    background-color: rgb(65, 65, 179);
+    padding-left: 1rem;
+}
+
+section {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section .content {
+    width: 100%;
+    max-width: 1300px;
+}
+
+.Packages {
+    background: linear-gradient(to top, #161d21, #13223cbb), url("Images/train.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.Packages .container {
+    margin-top: 30px;
+    color: var(--next-color);
+}
+
+.Packages .heading {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.Packages .box {
+    height: auto;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.Packages .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.Packages .col {
+    display: flex;
+    height: auto;
+    max-width: 350px;
+}
+
+.Packages img {
+    margin: 0.6rem 0.6rem;
+    height: 150px;
+    width: 200px;
+    border-radius: 4px;
+}
+
+.Packages .card {
+    display: grid;
+    background-color: var(--primary-color);
+    height:300px;
+    width:220px;
+    margin: 8px;
+    border-radius: 10px;
+    box-shadow: rgba(118, 133, 23, 0.779) 0px 4px 12px;
+}
+.Packages .card .body {
+    padding-left: 15px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.Packages .card .body p {
+    font-size: smaller;
+}
+
+.Packages .stars {
+    font-size: small;
+}
+.Packages .stars .checked{
+    color:#fcc512;
+}
+.Packages .card .body a {
+    height: auto;
+    max-width: fit-content; 
+    color: #061227;
+    background-color: #efef09;
+    border-radius: 4px;
+    font-size: 15px;
+    font-style: bold;
+    align-items: center;
+    padding-left: 2px;
+    border: 2px solid transparent;
+    transition: all 1s;
+}
+
+.Packages .card .body a:hover {
+    border: 2px solid yellow;
+    padding-left: 0.5rem;
+}
+
+.Services {
+    background: linear-gradient(to right, #161d215e, #1f232bab), url("Images/beach_1.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    color: var(--next-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Services .container {
+    color: var(--next-color);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.Services .heading {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.Services .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Services .col {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.Services .card {
+    height: 300px;
+    width: 250px;
+    display: grid;
+    background-color: var(--primary-color);
+    margin: 8px;
+    border-radius: 10px;
+    box-shadow: rgb(156, 169, 39) 0px 4px 12px;
+}
+.Services .card h4{
+    font-size: large;
+    margin-bottom:10px;
+}
+.Services .card .details {
+    text-align: center;
+}
+
+.Services .card i {
+    font-size: 60px;
+    color: #efef09;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Bookings .container {
+    margin-top: 30px;
+}
+
+.Bookings .heading {
+    color: var(--next-color);
+    text-align: center;
+}
+
+.Bookings .row {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.Bookings .card {
+    width: 300px;
+    height: 360px;
+}
+
+.Bookings .card img {
+    height: 270px;
+    width: 300px;
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3px;
+}
+ 
+form .form-control {
+    width: 200px;
+    color: black;
+    font-size: 15px;
+    padding: 2px;
+    margin: 2px;
+    background-color: #061227;
+    color: rgb(145, 133, 133);
+    border: 1px solid var(--secondary-color);
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+form input:hover { 
+    border: 2px solid white;
+    color:rgb(218, 228, 237);
+}
+form textarea {
+    width: 200px;
+    padding: 2px;
+    margin: 2px;
+    background-color: #061227;
+    font-size: large;
+    border: 1px solid var(--secondary-color);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+form textarea:hover {
+    border: 2px solid white;
+}
+
+form .submit {
+    margin-top: 20px;
+    height: 35px;
+    width: fit-content;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    color: var(--primary-color);
+    font-size: 16px;
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: var(--secondary-color);
+    padding-left: 2px;
+    cursor: pointer;
+    transition: all 2s;
+}
+
+form .submit:hover {
+    border: 2px solid yellow;
+    background-color: #dbfb0e;
+    padding-left: 0.8rem;
+}
+
+.Gallery {
+    margin-top: 100px;
+}
+
+.Gallery .heading {
+    color: var(--next-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 850px;
+    position: relative;
+    margin: auto;
+}
+.slideshow-container img{
+    width:100%;
+    height:100%;
+    background-size: cover;
+}
+.mySlides{
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: var(--primary-color);
+    background-color: #deed12;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/6 etc) */ 
+.numbertext {
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #dbfb0e;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+.active,
+.dot:hover {
+    background-color: var(--next-color);
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+.about {
+    margin-top: 70px;
+}
+
+.about .heading {
+    color: var(--next-color);
+    text-align: center;
+}
+
+.drum .hor {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.drum .ver {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3px;
+    color: var(--next-color);
+}
+
+.drum .card {
+    font-weight: 200;
+    height: 300px;
+    width: 280px;
+}
+
+.about h4 {
+    margin-top: -50px;
+    color: #f5f527;
+}
+
+.drum .card img {
+    height: 250px;
+    width: 250px;
+    padding: 10px;
+}
+
+.about .data p{
+    margin-top: 10px;
+    height: 200px;
+    width: 150px;
+    text-align: center;
+    color: var(--next-color);
+}
+
+.about #read {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border: none;
+    width: fit-content;
+    height: 25px;
+    margin-left: 20px;
+    padding-left: 2px;
+    transition: all 2s;
+    cursor: pointer;
+}
+
+.about #read:hover {
+    border: 2px solid rgb(213, 213, 31);
+    padding-left: 1rem;
+}
+.Contact {
+    width: 100%;
+    margin-top: 100px;
+    color: var(--next-color);
+}
+
+.Contact .social {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.Contact h1 {
+    font-family: "Baskerville SC", serif;
+}
+
+.Contact h1,
+h3
+{
+    margin-top: 6px;
+    text-align: center;
+}
+.Contact p{
+    text-align: center;
+}
+.Contact .copyright {
+    margin-bottom: 15px;
+}
+
+.active {
+    background-color: #061227;
+    width: 100%;
+    height: auto;
+}
+
+.icon-bars,
+#bars {
+    display: none;
+}
+
+@media (max-width:800px) {
+    .navbar .nav-items {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height:50vh;
+        width: 250px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.6em;
+        transition: all 2s;
+        background-color: #061227;
+    }
+
+    .icon-bars {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+    }
+
+    .icon-bars i {
+        color: white;
+        font-size: 40px;
+        transform: rotate(90deg);
+    }
+
+    #bars:checked~.navbar .nav-items {
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+}
