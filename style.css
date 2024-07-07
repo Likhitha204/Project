@@ -367,7 +367,7 @@ form .submit {
 
 form .submit:hover {
     border: 2px solid yellow;
-    background-color: #dbfb0e;
+    color: var(--primary-color);
     padding-left: 0.8rem;
 }
 
